@@ -1,64 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>African Image: Title of Your Page Goes Here</title>
-</head>
-<body>
-<<<<<<< HEAD
+/* Comments in CSSS start and end like this
+I need to pick two font families
+Choose two or three colors
+Give my text and headline different sizes and styles
+*/
 
-=======
-holaaa
-my site
->>>>>>> d738c8bb04c466cef902ceddbfb1fb982f5c7564
-<h1>
-  Your Awesome Story Headline
-</h1>
-<h2>
-An attractive summary or "dek" below the headline of my story
-</h2>
-<b>
-Your Byline
-</b>
-<p>
-A nice opening lead paragraph
-</p>
-<p>
-Another paragraph with a link to something
-</p>
-<p>
-  <ul>
-An "unordered list":
-    <li>Thing 1</li>
-    <li>Thing 2</li>
-</ul>
-<ul>
-An "ordered" list:
-    <ol>Thing 1</ol>
-    <ol>Thing 2</ol>
-</ul>
-<h3>
-A sub-headline
-</h3>
-<p>
-Another paragraph
-  <blockquote>
-  A pullquote
-  </blockquote>
-</p>
+body {
+  background-color: white;
+  font-family: sans-serif;
+  color: black;
+}
 
-<p>
-Hi check this  <a href="https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/" target="_blank">link</a>
-</p>
+img {
+  border-radius: 50%;
+  border-color: black;
+}
 
-<p>Call me maybe. Or <a mailto="sile.moloneuy@journalism.cuny.edu" target="_blank">Email me</a>
-<<<<<<< HEAD
-</p>
-</body> <1-- Close Body!! -->
-</html>
-=======
->>>>>>> d738c8bb04c466cef902ceddbfb1fb982f5c7564
 
-  Another paragraph</p>
+a {
+  color: red;
+  text-decoration: underline;
+}
 
-</body>
-</html>
+a:hover {
+  text-decoration: none;
+}
