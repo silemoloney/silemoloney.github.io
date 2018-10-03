@@ -1,110 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Story 1 webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Remember to add the link to your CSS styles file here -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- My fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400" rel="stylesheet">
+    <!-- Icons CSS from Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Emoji CSS -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  </head>
 
-<head>
-<title>My training webpage index file</title>
-<link rel="stylesheet" href="css/styles.css">
-<!-- ADD LINK TO THE CSS STYLES FILE -->
+  <body>
 
-<!-- ADD LINK TO THE WEB FONTS YOU WILL USE. NOT YET -->
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,800,900' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
-<!-- Adding a comment for practice here -->
-
-</head>
-<body>
-
-  <nav>
-    <header>
-        <div class="navWrapper" id="home">
-          <div class=" clearfix">
-            <h2 class="companyName">Síle Moloney</h2>
-            <nav class="mainNav clearfix">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="story1.html" class="smoothScroll">Story 1</a></li>
-                <li><a href="story2.html" class="smoothScroll">Story 2</a></li>
-                <li><a href="story3.html" class="smoothScroll">Story 3</a></li>
-                <li><a href="#contact" class="smoothScroll">Contact</a></li>
-              </ul>
-            </nav>
-          </div><!-- end .innerWrapper -->
-        </div><!-- end of .navWrapper -->
-
-      </header>
-  </nav>
-
-  <header>
-  </header>
-
-  <article>
-
-<h1>: </h1>
-
-<h2></h2>
-<p>by <strong>Síle Moloney</p>
-<figure>
-<img src="images/img_sile.jpg" alt=
-"Image Síle Moloney" style="width:500px;height:500px;">
-<figcaption>Hell's Kitchen mural</figcaption>
-<figure>
-
-<br>
-<p>Here are some resources I used to find information:</p>
-    <ul>
-      <li>Spokeo</li>
-      <li>Dataminr</li>
-      <li>Banjo</li>
-      <li>various Hell's Kitchen websites, as follows:
+    <header><!-- Inside the header tag the NAV menu -->
+      <nav><!-- NAV is for MENU -->
         <ul>
-<br>
-          <li><a href="https://www.hellskitchen-nyc.com">Hell's Kitchen NYC</a></li>
-          <li><a href="https://untappedcities.com/2012/10/12/gang-history-in-hells-kitchen">Gang History</a></li>
-<br>
+          <li> <a href="#">Your Name</i></a></li>
+          <li> <a href="#">Story 1</a></li>
+          <li> <a href="#">Story 2</a></li>
+          <li> <a href="#">Story 3</a></li>
         </ul>
-      <li>Property Shark</li>
-      <li>Community Meetings</li>
-      <li>Talking to People in my CD</li>
-    </ul>
-<br>
-<p>While reporting, I adhered to the following principles:</p>
+      </nav>
 
-<table>
-  <tr>
-    <td>[ ]</td>
-    <td>Asking sources to spell their names</td>
-  </tr>
+      <!-- And story headline, summary and byline -->
+      <h1 class="display">Your Awesome Story Headline</h1>
+      <h2 class="summary">My great summary or dek with the most important things about the story to make you want to read it</h2>
+        <h3 id="author"><span>By </span><a href="mailto:myname@example.com">Your Byline</a></h3>
+    </header>
 
-  <tr>
-    <td>[ ]</td>
-    <td>Asking sources to spell their full title</td>
-  </tr>
-
-  <tr>
-    <td>[ ]</td>
-    <td>Asking sources for the source of any numbers cited</td>
-  </tr>
-</table>
-
-<aside class="pquote">
-    <blockquote>
-        Are you talking to me??
-    </blockquote>
-</aside>
-
-<p>Contact me:</p>
-
-<ol>
-  <li><a href="mailto:sile.moloney@journalism.cuny.edu">Email me</a></li>
-  <li><a href="https://twitter.com/harpolux">Twitter</a></li>
-</ol>
-
-</article>
-
-<footer>
-</footer>
+    <article>
 
 
+      <figure><!-- We will start with a main image of 700 px width by auto height px aligned center and a caption (different size than paragraphs -->
+          <img src="images/spotlight_movie.jpg" alt="A description of the image, in case you can't see the picture">
+          <figcaption>
+            A nice photo caption. <i>Author credit</i>.
+          </figcaption>
+      </figure>
 
-</body> <!-- Close Body!! -->
+      <!-- Start news copy -->
+      <p>Paragraph. Place holder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra vel turpis nunc eget lorem dolor. In ornare quam viverra orci sagittis eu. Volutpat blandit aliquam etiam erat velit scelerisque in. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Nam at lectus urna duis.</p>
+
+      <p>Paragraph. Place holder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra vel turpis nunc eget lorem dolor. In ornare quam viverra orci sagittis eu. Volutpat blandit aliquam etiam erat velit scelerisque in. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Nam at lectus urna duis.</p>
+
+      <!-- A embed code from Youtube -->
+      <iframe width="700" height="393" src="https://www.youtube.com/embed/56jw6tasomc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+      <p>Paragraph. Place holder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra vel turpis nunc eget lorem dolor. In ornare quam viverra orci sagittis eu. Volutpat blandit aliquam etiam erat velit scelerisque in. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Nam at lectus urna duis.</p>
+
+      <p>Paragraph. Place holder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra vel turpis nunc eget lorem dolor. In ornare quam viverra orci sagittis eu. Volutpat blandit aliquam etiam erat velit scelerisque in. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Nam at lectus urna duis.</p>
+
+      <blockquote>
+        A lovely pull-quote that summarizes the most important thing from your story.
+      </blockquote>
+
+      <h2>Subtitle</h2>
+
+      <p>Paragraph. Place holder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra vel turpis nunc eget lorem dolor. In ornare quam viverra orci sagittis eu. Volutpat blandit aliquam etiam erat velit scelerisque in. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Nam at lectus urna duis.</p>
+
+
+      <!-- Group of 2 images of 345 pixels by 345 pixels each, aligned side by side with captions -->
+      <div class="img-wrapper">
+          <figure>
+              <img src="https://picsum.photos/345" alt="Square image1 1">
+              <figcaption> Fig.1 - A square image.</figcaption>
+          </figure>
+          <figure>
+              <img src="https://picsum.photos/345" alt="Square image2 2">
+              <figcaption> Fig.2 - A square image.</figcaption>
+          </figure>
+      </div>
+
+    <p>Paragraph. Place holder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra vel turpis nunc eget lorem dolor. In ornare quam viverra orci sagittis eu. Volutpat blandit aliquam etiam erat velit scelerisque in. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Nam at lectus urna duis.</p>
+
+    <p>Paragraph. Place holder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra vel turpis nunc eget lorem dolor. In ornare quam viverra orci sagittis eu. Volutpat blandit aliquam etiam erat velit scelerisque in. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Nam at lectus urna duis.</p>
+
+
+    </article><!-- END Article content -->
+
+      <!-- Start footer -->
+      <footer>
+
+        <h2>Contact</p>
+
+          <ul class="contact-links">
+            <li><i class="fas fa-map-marker-alt"><a href="https://goo.gl/maps/JfWQRczaU992" alt="Office 421A, 219 W40 St, New York"></a></i>
+            <li><i class="fas fa-envelope"><a href="mailto:miguel.paz@journalism.cuny.edu" alt="Email me"></a></i></li>
+            <li><i class="fab fa-github"><a href="https://github.com/miguelpaz" alt="My Github"></a></i>
+            <li><i class="fab fa-twitter"><a href="https://twitter.com/miguelpaz" alt="Follow me"></a></i>
+          </ul>
+
+      <p id="license">© 2018 Your instructor. Under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>
+
+      </footer>
+
+  </body>
 </html>
