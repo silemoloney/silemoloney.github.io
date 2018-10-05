@@ -73,7 +73,7 @@ header {
 	background-image:url("insert here th url of the image");  */
   background-size: cover; /* Means cover the entire element. Examples
 https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&preval=cover */
-  color: #white;
+  color: #black;
   font-family: Roboto, sans-serif;/*use Roboto for everything inside header*/
   text-align: center;/* align all text inside header to the center*/
 }
