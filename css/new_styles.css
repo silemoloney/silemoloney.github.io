@@ -67,13 +67,13 @@ body {
 
 /* Header */
 header {
-  background-color: #ff6600; /*orange*/
+  background-color: #black; /*black*/
   /* If you wanted you could add a
 	background-image. For this you can type, before background-color the property and value
 	background-image:url("insert here th url of the image");  */
   background-size: cover; /* Means cover the entire element. Examples
 https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&preval=cover */
-  color: #ffffff;
+  color: #white;
   font-family: Roboto, sans-serif;/*use Roboto for everything inside header*/
   text-align: center;/* align all text inside header to the center*/
 }
@@ -105,13 +105,13 @@ https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&pre
 
 /*header h3 a byline link*/
 #author a {
-  color: #000000;/*black*/
+  color: #grey;/*black*/
 }
 
 
 /*header h3 a:hover byline link on hover*/
 .author a:hover {
-  color: #ffffff;/*white*/
+  color: #red;/*white*/
   text-decoration: underline;
   text-decoration-style: solid;}
 
@@ -154,7 +154,7 @@ li {
 
 /*links in nav menu*/
 nav ul li a {
-  color: #ffffff;/*white*/
+  color: #white;/*white*/
   font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -187,7 +187,7 @@ article {
 h1, h2, h3, h4, h5, h6 {
 	font-family: Roboto, sans-serif;
 	font-weight: 400;
-	color: #000000;/*black*/}
+color: #white;/*black*/}
 
 h2 {font-size: 24px;}/*I am using h2 for subtitles*/
 
@@ -228,13 +228,13 @@ figcaption {
 /* Links in body */
 
 a {
-  color: #ff6600;/*orange*/
+  color: #blue;/*orange*/
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;/*when cursor is over the link show the link with underline*/
-  text-decoration-color: #000000;/*black for the underline*/
+  text-decoration-color: #grey;/*black for the underline*/
 }
 
 
@@ -243,7 +243,7 @@ a:hover {
 blockquote {
   border-top: 6px solid #ff6600;/*orange top border line of 6px*/
   border-bottom: 2px solid #ff6600;/*orange bottom border line of 2px*/
-  color: #000000;
+  color: #white;
   font-family: Roboto, sans-serif;
   font-size: 24px;
   margin: 30px;
@@ -268,8 +268,8 @@ footer {
   padding: 20px 0px 20px 0px; /* Top, right, bottom, left */
   width: 100%;/*Make navigation 100% width of the viewport*/
   /*height: 100px;Give footer 200px of height*/
-  background: #000000;/*black*/;
-  color: #ffffff;/*white*/
+  background: #grey;/*black*/;
+  color: #white;/*white*/
 }
 
 /*Footer list of links aligned horizontal*/
@@ -282,14 +282,14 @@ footer ul li {
 
 /*links in footer*/
 footer ul li a {
-  color: #ffffff;/*white*/
+  color: #white;/*white*/
   text-decoration: none;
   text-transform: uppercase;/*make all links uppercase*/
 }
 
 /*links in footer on hover*/
 footer ul li a:hover {
-  color: #ff6600;/*orange*/
+  color: #grey;/*orange*/
   text-decoration: underline;
 }
 
