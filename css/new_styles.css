@@ -67,13 +67,13 @@ body {
 
 /* Header */
 header {
-  background-color: #white; /*black*/
+  background-color: #pink; /*black*/
   /* If you wanted you could add a
 	background-image. For this you can type, before background-color the property and value
 	background-image:url("insert here th url of the image");  */
   background-size: cover; /* Means cover the entire element. Examples
 https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&preval=cover */
-  color: #black;
+  color: #white;
   font-family: Roboto, sans-serif;/*use Roboto for everything inside header*/
   text-align: center;/* align all text inside header to the center*/
 }
@@ -154,7 +154,7 @@ li {
 
 /*links in nav menu*/
 nav ul li a {
-  color: #white;/*white*/
+  color: #green;/*white*/
   font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
