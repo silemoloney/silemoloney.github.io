@@ -54,6 +54,7 @@ Check what the pseudo elements :before and :after are for https://www.w3schools.
 /*rules for all the body text
 you can give specific text elements their own rules by adding a selector { property: value;} When you do, you override this global rule*/
 body {
+  background-color: black;
   font-family: 'Noto serif', serif; /* font */
   font-size: 16px; /* 16px is the standard font size */
   line-height: 1.5; /* 1.5 times the size of the font */
@@ -67,7 +68,7 @@ body {
 
 /* Header */
 header {
-  background-color: ###808000; /*black*/
+  background-color: ###grey; /*black*/
   /* If you wanted you could add a
 	background-image. For this you can type, before background-color the property and value
 	background-image:url("insert here th url of the image");  */
