@@ -68,13 +68,13 @@ body {
 
 /* Header */
 header {
-  background-color: ###grey; /*black*/
+  background-color: #1CEE3F; /*black*/
   /* If you wanted you could add a
 	background-image. For this you can type, before background-color the property and value
 	background-image:url("insert here th url of the image");  */
   background-size: cover; /* Means cover the entire element. Examples
 https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&preval=cover */
-  color: #white;
+  color: #FDFEFE; /*white
   font-family: Roboto, sans-serif;/*use Roboto for everything inside header*/
   text-align: center;/* align all text inside header to the center*/
 }
@@ -106,13 +106,13 @@ https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&pre
 
 /*header h3 a byline link*/
 #author a {
-  color: #grey;/*black*/
+  color: #FDFEFE;/*white*/
 }
 
 
 /*header h3 a:hover byline link on hover*/
 .author a:hover {
-  color: #red;/*white*/
+  color: #EAF2F8;/*light blue*/
   text-decoration: underline;
   text-decoration-style: solid;}
 
@@ -155,7 +155,7 @@ li {
 
 /*links in nav menu*/
 nav ul li a {
-  color: #green;/*white*/
+  color: #FDFEFE;/*white*/
   font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -188,7 +188,7 @@ article {
 h1, h2, h3, h4, h5, h6 {
 	font-family: Roboto, sans-serif;
 	font-weight: 400;
-color: #white;/*black*/}
+color: #EAFAF1;/*light green*/}
 
 h2 {font-size: 24px;}/*I am using h2 for subtitles*/
 
