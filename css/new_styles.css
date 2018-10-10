@@ -68,7 +68,7 @@ body {
 
 /* Header */
 header {
-  background-color: #827717; /*olive Green*/
+  background-color: #827717; /*olive green*/
   /* If you wanted you could add a
 	background-image. For this you can type, before background-color the property and value
 	background-image:url("insert here th url of the image");  */
@@ -244,7 +244,7 @@ a:hover {
 blockquote {
   border-top: 6px solid #ff6600;/*orange top border line of 6px*/
   border-bottom: 2px solid #ff6600;/*orange bottom border line of 2px*/
-  color: #white;
+  color: #FAFAFA;
   font-family: Roboto, sans-serif;
   font-size: 24px;
   margin: 30px;
@@ -269,8 +269,8 @@ footer {
   padding: 20px 0px 20px 0px; /* Top, right, bottom, left */
   width: 100%;/*Make navigation 100% width of the viewport*/
   /*height: 100px;Give footer 200px of height*/
-  background: #grey;/*black*/;
-  color: #white;/*white*/
+  background: #37474F;/*dark grey*/
+  color: ##FAFAFA;/*light grey*/
 }
 
 /*Footer list of links aligned horizontal*/
@@ -283,7 +283,7 @@ footer ul li {
 
 /*links in footer*/
 footer ul li a {
-  color: #white;/*white*/
+  color: #FAFAFA  ;/*light grey*/
   text-decoration: none;
   text-transform: uppercase;/*make all links uppercase*/
 }
