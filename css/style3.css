@@ -1,0 +1,352 @@
+/******************************************
+FONTS
+
+Sans-serif / serif combination
+font-family: 'Noto Serif', serif; 400
+font-family: 'Roboto', sans-serif; 700, 400
+
+Pairings, weights and sizes
+- Header h1 (title): Roboto, sans-serif; font-size: 56px; font-weight: 700; line-height: 1.3;
+- Header h2 (summary): 'Noto serif', serif; font-size: 32px; font-weight: 700; line-height: 1.3;
+- Header h3 (byline): Roboto, sans-serif; font-size: 18px; font-weight: 400;
+- Body text: 'Noto serif', serif; font-size: 16px; font-weight: 400; line-height: 1.5;
+- Blockquotes: Roboto, sans-serif; font-size: 24px; font-weight: inherit; line-height: inherit;
+- Figcaptions: Roboto, sans-serif; font-size: inherits; font-weight: inherit; line-height: 1.1;
+********************************************/
+
+/******************************************************
+TABLE OF CONTENTS
+1. Global styles (things that apply to all elements of site: general display, general margin, general font)
+2. Header & Nav (specific to header and nav)
+3. Main body Content (headings, images and figures, blockquotes)
+4. Twitter embed codes
+5. Footer Content
+6. Media Queries
+******************************************************/
+
+
+/******************************************************
+*******************************************************
+1. Global styles
+(things that apply to all elements of site)
+*******************************************************
+******************************************************/
+
+/*Make everything inside the <html> act as a block.
+box-sizing: used to tell the browser what the sizing properties (width and height) should include.
+border-box: The width and height properties (and min/max properties) includes content, padding and border, but not the margin */
+
+html {
+  box-sizing: border-box;
+}
+
+/* The asterisk * used below means wildcard or affect everything.
+box-sizing: inherit, means inherit the property border-box from its parent element html.
+Check what the pseudo elements :before and :after are for https://www.w3schools.com/CSS/css_pseudo_elements.asp */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*rules for all the body text
+you can give specific text elements their own rules by adding a selector { property: value;} When you do, you override this global rule*/
+body {
+  font-family: 'Noto serif', serif; /* font */
+  font-size: 16px; /* 16px is the standard font size */
+  line-height: 1.5; /* 1.5 times the size of the font */
+}
+
+/******************************************************
+*******************************************************
+2. Header & Nav styles (specific to header and nav)
+*******************************************************
+******************************************************/
+
+/* Header */
+header {
+  background-color: #ff6600; /*orange*/
+  /* If you wanted you could add a
+	background-image. For this you can type, before background-color the property and value
+	background-image:url("insert here th url of the image");  */
+  background-size: cover; /* Means cover the entire element. Examples
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&preval=cover */
+  color: #ffffff;
+  font-family: Roboto, sans-serif;/*use Roboto for everything inside header*/
+  text-align: center;/* align all text inside header to the center*/
+}
+
+/*header h1 story title*/
+.display {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 20px 20px 10px 20px;/*Top, right, bottom, left */
+}
+
+/*header h2 lead*/
+.summary {
+  font-family: 'Noto serif', serif;/*exception: the lead must use Noto serif instead of Roboto*/
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3;
+  padding: 0px 20px;/* Top and bottom 0px of padding, right and left 20px of padding*/
+  margin: 0px 60px;/* Top and bottom 0px of margin, right and left 60px of margin*/
+}
+
+/*header h3 byline*/
+.author {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 40px;/* add 40px of padding space in the bottom of byline*/
+}
+
+/*header h3 a byline link*/
+#author a {
+  color: #000000;/*black*/
+}
+
+
+/*header h3 a:hover byline link on hover*/
+.author a:hover {
+  color: #ffffff;/*white*/
+  text-decoration: underline;
+  text-decoration-style: solid;}
+
+/* Wondering what a bunch of selectors are doing together?
+Selectors can be combined and will behave according to the syntaxis you used to combine them.
+.author a means	select all <a> elements inside <h3> elements that are inside the <header> element
+.author a:hover means select all <a:hover> elements inside <h3> elements that are inside the <header> element
+A easy rule: the selector at the far right is the one that will be activated.
+Here is a list with examples: https://www.w3schools.com/cssref/css_selectors.asp */
+
+/* Navigation styles */
+nav {
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  /* Top, right, bottom, left */
+  width: 100%;/*Make navigation 100% width of the viewport*/
+  background: rgba(0, 0, 0, 1);}
+  /* I used RGBA or Red Green Blue Alpha instead of hexadecimal.
+    In RGBA the Alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+    This means you can chosse transparency / opacity. Info: https://www.w3schools.com/css/css3_colors.asp
+    Use this calculator to go from turn a hexadecimal color into a rgba color: http://hex2rgba.devoth.com/
+
+/*Nav list of links aligned horizontal*/
+li {
+  display: inline;
+  /* Display: Every HTML element has a default value for display.
+    Usually it's either "block" or "inline".
+    Block: Elements like headings, paragraphs and list items display "block" by default,
+    which means they strecth the whole width of the page and have line breaks before and after.
+    Inline: Links like the <a> tag and a few others display "inline" by default, wich means they
+    exist within the normal flow of the text they are contained within. No line breaks and no
+    taking the whole wide page.
+    Info: http://marksheet.io/html-block-inline.html
+    Examples: https://www.w3schools.com/css/css_display_visibility.asp */
+  padding: 0px 10px 0px 10px;
+  /*top right bottom left or give it 0px of top space, 10 px to
+    the right, 0px to the bottom and 10px to the left. To remember it, this rule is also called
+    TRouBLE or TRBL for Top Right Bottom Left*/
+}
+
+/*links in nav menu*/
+nav ul li a {
+  color: #ffffff;/*white*/
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;/*make all links uppercase*/
+}
+
+/*links in nav on hover*/
+nav ul li a:hover {text-decoration: underline;}
+
+
+/******************************************************
+*******************************************************
+3. Main body content
+*******************************************************
+******************************************************/
+
+article {
+  max-width: 700px;/*set the width of the text and other elements inside the article tag*/
+  padding: 20px;/*give it padding all around*/
+  margin: auto;
+  /* set the margin property to auto to horizontally center the element
+  within its container. If you do margin: 0 auto that means:
+  top and bottom give it a margin 0, and the left and right margin auto.
+  More: https://css-tricks.com/forums/topic/why-or-how-does-margin0-auto-work/ */
+}
+
+/* Body headings */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Roboto, sans-serif;
+	font-weight: 400;
+	color: #000000;/*black*/}
+
+h2 {font-size: 24px;}/*I am using h2 for subtitles*/
+
+/* Image, figure and figcaption styles from general to specific */
+
+figure {
+  display: block;
+  /* in this way it fills the width of the parent element article */
+  margin: 0px;
+  /* no margin to avoid extra space around the element */
+}
+
+/*give images a max-width of 100%*/
+img {
+  max-width: 100%;
+  height: auto;
+  /* adjust the height of image to the max-width */
+}
+
+/*figcaption inherits font size from global styles*/
+figcaption {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  padding: 2px 2px;
+}
+
+/*div container for the 3 images and captions, using the class .img-wrapper*/
+.img-wrapper {
+  display: flex;
+  flex-direction: row; /*align in the same row*/
+  justify-content: space-between;
+}
+
+.img-wrapper figure {width: 200px;}/*give the caption text a width of 200 px to make sure is the same width of the image*/
+
+/* Links in body */
+
+a {
+  color: #ff6600;/*orange*/
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;/*when cursor is over the link show the link with underline*/
+  text-decoration-color: #000000;/*black for the underline*/
+}
+
+
+/* Blockquotes */
+
+blockquote {
+  border-top: 6px solid #ff6600;/*orange top border line of 6px*/
+  border-bottom: 2px solid #ff6600;/*orange bottom border line of 2px*/
+  color: #000000;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  margin: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+
+
+/******************************************************
+*******************************************************
+4. Footer content
+*******************************************************
+******************************************************/
+
+
+footer {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  padding: 20px 0px 20px 0px; /* Top, right, bottom, left */
+  width: 100%;/*Make navigation 100% width of the viewport*/
+  /*height: 100px;Give footer 200px of height*/
+  background: #000000;/*black*/;
+  color: #ffffff;/*white*/
+}
+
+/*Footer list of links aligned horizontal*/
+footer ul li {
+  display: inline;
+  /*top right bottom left or give it 0px of top space, 10 px to
+    the right, 0px to the bottom and 10px to the left. To remember it, this rule is also called
+    TRouBLE or TRBL for Top Right Bottom Left*/
+}
+
+/*links in footer*/
+footer ul li a {
+  color: #ffffff;/*white*/
+  text-decoration: none;
+  text-transform: uppercase;/*make all links uppercase*/
+}
+
+/*links in footer on hover*/
+footer ul li a:hover {
+  color: #ff6600;/*orange*/
+  text-decoration: underline;
+}
+
+
+/******************************************************
+*******************************************************
+6. Mediaqueries
+*******************************************************
+******************************************************/
+
+
+/* MEDIA QUERIES. The syntax for media queries looks like this.
+  The first part " @media (max-width: 700px) { " is setting a condition - in this case that the browser should be smaller than 500px - and when that condition is true the CSS inside gets activated. So that means that if the browser is smaller than 500 px of width then make the body background red. */
+
+@media (max-width: 700px) {
+  /* Now after that add some styles that will make the page look better at narrower widths and mobile devices.*/
+  li {
+    display: block;
+    padding: 5px;
+  }
+  /*navigation links should sit on top of each other rather than inline*/
+  nav ul li a/*links in nav menu*/{
+    font-size: 12px;
+  }
+  /*font should be smaller when the browser is small */
+  .display/*header h1 story title*/{
+    font-size: 36px;
+  }
+  .summary/*header h2 lead*/{
+    font-size: 18px;
+    margin: 0 auto;
+  }
+  .author/*header h3 byline*/{
+    font-size: 14px;
+  }
+  p {
+    font-size: 16px;
+  }
+  figcaption {
+    font-size: 14px;
+  }
+  blockquote {
+    font-size: 18px;
+  }
+  /*div container for the 3 images and captions, change flex direction to column instead of row
+  so they images align vertical in order up to down */
+  .img-wrapper {
+  display: flex;
+  /* flex-wrap: wrap;  Delete this one after testing mediaqueries for images*/
+  flex-direction: column;/*align vertically image after image*/
+  justify-content: space-between;
+}
+  footer ul li {
+  display: block;/*align links in footer vertically*/
+  padding: 5px;
+}
+
+  footer ul li a {
+  font-size: 12px;
+}
+
+}
