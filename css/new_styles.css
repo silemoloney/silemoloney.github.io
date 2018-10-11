@@ -164,7 +164,7 @@ nav ul li a {
 }
 
 /*links in nav on hover*/
-nav ul li a:hover {text-decoration: underline; /*blue*}
+nav ul li a:hover {text-decoration: underline;}
 
 
 /******************************************************
