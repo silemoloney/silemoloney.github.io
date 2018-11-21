@@ -16,6 +16,15 @@ Pairings, weights and sizes
 - Figcaptions: Roboto, sans-serif; font-size: inherits; font-weight: inherit; line-height: 1.1;
 ********************************************/
 
+/******************************************
+COLORS
+
+Blackish: #111111. For background.
+Pinky red: #ff0b3a. For links on hover, for border of blockquote, for header and footer background
+White #ffffff. For text.
+
+********************************************/
+
 /******************************************************
 TABLE OF CONTENTS
 1. Global styles (things that apply to all elements of site: general display, general margin, general font)
@@ -54,7 +63,8 @@ Check what the pseudo elements :before and :after are for https://www.w3schools.
 /*rules for all the body text
 you can give specific text elements their own rules by adding a selector { property: value;} When you do, you override this global rule*/
 body {
-  background-color: black;
+  background-color: #111111;
+  color: #ffffff;
   font-family: 'Noto serif', serif; /* font */
   font-size: 16px; /* 16px is the standard font size */
   line-height: 1.5; /* 1.5 times the size of the font */
@@ -68,13 +78,10 @@ body {
 
 /* Header */
 header {
-  background-color: #827717; /*olive green*/
-  /* If you wanted you could add a
-	background-image. For this you can type, before background-color the property and value
-	background-image:url("insert here th url of the image");  */
+  background-color: #ff0b3a; /*pinky redish*/
   background-size: cover; /* Means cover the entire element. Examples
 https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&preval=cover */
-  color: #FDFEFE; /*white
+  color: #ffffff; /*white
   font-family: Roboto, sans-serif;/*use Roboto for everything inside header*/
   text-align: center;/* align all text inside header to the center*/
 }
@@ -98,7 +105,7 @@ https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&pre
 }
 
 /*header h3 byline*/
-.author {
+#author {
   font-size: 18px;
   font-weight: 400;
   padding-bottom: 40px;/* add 40px of padding space in the bottom of byline*/
@@ -106,15 +113,14 @@ https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&pre
 
 /*header h3 a byline link*/
 #author a {
-  color: #FDFEFE;/*white*/
+  color: #ffffff;/*white*/
 }
 
 
 /*header h3 a:hover byline link on hover*/
-.author a:hover {
-  color: #EAF2F8;/*light blue*/
+#author a:hover {
   text-decoration: underline;
-  text-decoration-style: solid;}
+}
 
 /* Wondering what a bunch of selectors are doing together?
 Selectors can be combined and will behave according to the syntaxis you used to combine them.
@@ -155,7 +161,7 @@ li {
 
 /*links in nav menu*/
 nav ul li a {
-  color: #FDFEFE;/*white*/
+  color: #ffffff;/*white*/
   font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -188,9 +194,11 @@ article {
 h1, h2, h3, h4, h5, h6 {
 	font-family: Roboto, sans-serif;
 	font-weight: 400;
-color: #EAFAF1;/*light green*/}
+color: #ffffff;/*light green*/}
 
 h2 {font-size: 24px;}/*I am using h2 for subtitles*/
+
+p {font-size: 20px;}
 
 /* Image, figure and figcaption styles from general to specific */
 
@@ -224,29 +232,31 @@ figcaption {
   justify-content: space-between;
 }
 
-.img-wrapper figure {width: 200px;}/*give the caption text a width of 200 px to make sure is the same width of the image*/
+.img-wrapper figure {
+  width: 320px;
+} /*give the caption text a width of 200 px to make sure is the same width of the image*/
 
 /* Links in body */
 
 a {
-  color: #blue;/*orange*/
+  color: #ff0b3a;/*pinkyredish*/
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;/*when cursor is over the link show the link with underline*/
-  text-decoration-color: #grey;/*black for the underline*/
+  text-decoration-color: #ffffff;/*black for the underline*/
 }
 
 
 /* Blockquotes */
 
 blockquote {
-  border-top: 6px solid #ff6600;/*orange top border line of 6px*/
-  border-bottom: 2px solid #ff6600;/*orange bottom border line of 2px*/
-  color: #FAFAFA;
+  border-top: 6px solid #ff0b3a;/*pinky redish border line of 6px*/
+  border-bottom: 2px solid #ff0b3a;/*orange bottom border line of 2px*/
+  color: #ffffff;
   font-family: Roboto, sans-serif;
-  font-size: 24px;
+  font-size: 36px;
   margin: 30px;
   padding: 30px;
   text-align: center;
@@ -269,8 +279,8 @@ footer {
   padding: 20px 0px 20px 0px; /* Top, right, bottom, left */
   width: 100%;/*Make navigation 100% width of the viewport*/
   /*height: 100px;Give footer 200px of height*/
-  background: #37474F;/*dark grey*/
-  color: ##FAFAFA;/*light grey*/
+  background: #ff0b3a;/*pinkyredish*/
+  color: #FFFFFF;/*light grey*/
 }
 
 /*Footer list of links aligned horizontal*/
@@ -283,14 +293,13 @@ footer ul li {
 
 /*links in footer*/
 footer ul li a {
-  color: #FAFAFA  ;/*light grey*/
+  color: #ffffff  ;/*light grey*/
   text-decoration: none;
   text-transform: uppercase;/*make all links uppercase*/
 }
 
 /*links in footer on hover*/
 footer ul li a:hover {
-  color: #grey;/*orange*/
   text-decoration: underline;
 }
 
@@ -303,9 +312,9 @@ footer ul li a:hover {
 
 
 /* MEDIA QUERIES. The syntax for media queries looks like this.
-  The first part " @media (max-width: 700px) { " is setting a condition - in this case that the browser should be smaller than 500px - and when that condition is true the CSS inside gets activated. So that means that if the browser is smaller than 500 px of width then make the body background red. */
+  The first part " @media (max-width: 680px) { " is setting a condition - in this case that the browser should be smaller than 680px - and when that condition is true the CSS inside gets activated. So that means that if the browser is smaller than 500 px of width then make the body background red. */
 
-@media (max-width: 700px) {
+@media (max-width: 680px) {
   /* Now after that add some styles that will make the page look better at narrower widths and mobile devices.*/
   li {
     display: block;
@@ -316,33 +325,40 @@ footer ul li a:hover {
     font-size: 12px;
   }
   /*font should be smaller when the browser is small */
-  .display/*header h1 story title*/{
+
+  .display /*header h1 story title*/ {
     font-size: 36px;
   }
-  .summary/*header h2 lead*/{
+  .summary/*header h2 lead*/ {
     font-size: 18px;
     margin: 0 auto;
   }
-  .author/*header h3 byline*/{
+
+  #author/*header h3 byline*/ {
     font-size: 14px;
   }
+
   p {
     font-size: 16px;
   }
+
   figcaption {
     font-size: 14px;
   }
+
   blockquote {
     font-size: 18px;
   }
   /*div container for the 3 images and captions, change flex direction to column instead of row
   so they images align vertical in order up to down */
+
   .img-wrapper {
   display: flex;
   /* flex-wrap: wrap;  Delete this one after testing mediaqueries for images*/
   flex-direction: column;/*align vertically image after image*/
   justify-content: space-between;
 }
+
   footer ul li {
   display: block;/*align links in footer vertically*/
   padding: 5px;
