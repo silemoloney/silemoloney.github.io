@@ -120,6 +120,8 @@ https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-size&pre
 /*header h3 a:hover byline link on hover*/
 #author a:hover {
   text-decoration: underline;
+  background-color: blackish;
+}
 }
 
 /* Wondering what a bunch of selectors are doing together?
