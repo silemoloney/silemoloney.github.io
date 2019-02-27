@@ -186,6 +186,8 @@ nav ul li a:hover {text-decoration: underline;}
 article {
   max-width: 700px;/*set the width of the text and other elements inside the article tag*/
   padding: 20px;/*give it padding all around*/
+  text-align: justify;
+  text-justify: inter-word;
   margin: auto;
   /* set the margin property to auto to horizontally center the element
   within its container. If you do margin: 0 auto that means:
