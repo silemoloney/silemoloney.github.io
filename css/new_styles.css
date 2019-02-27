@@ -368,6 +368,7 @@ footer ul li a:hover {
   footer ul li {
   display: block;/*align links in footer vertically*/
   padding: 5px;
+  align-items: center;
 }
 
   footer ul li a {
