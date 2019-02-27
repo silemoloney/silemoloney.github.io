@@ -65,6 +65,8 @@ you can give specific text elements their own rules by adding a selector { prope
 body {
   background-color: #111111;
   color: #ffffff;
+  text-align: justify;
+  text-justify: inter-word;
   font-family: 'Noto serif', serif; /* font */
   font-size: 16px; /* 16px is the standard font size */
   line-height: 1.5; /* 1.5 times the size of the font */
