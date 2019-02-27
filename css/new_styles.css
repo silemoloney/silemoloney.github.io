@@ -367,6 +367,8 @@ footer ul li a:hover {
 
   footer ul li {
   display: block;/*align links in footer vertically*/
+  width: 70%;
+  margin: auto;
   padding: 5px;
   text-align: center;
 }
@@ -374,6 +376,8 @@ footer ul li a:hover {
   footer ul li a {
   font-size: 12px;
   text-align: center;
+  width: 70%;
+  margin: auto;
 }
 
 }
