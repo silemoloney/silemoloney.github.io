@@ -373,6 +373,7 @@ footer ul li a:hover {
 
   footer ul li a {
   font-size: 12px;
+  align-items: center;
 }
 
 }
